@@ -1,0 +1,6 @@
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Masala Dosa','South Indian',55.00,35,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Masala Dosa');
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Idli (2 pcs)','South Indian',30.00,50,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Idli (2 pcs)');
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Veg Fried Rice','Chinese',80.00,25,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Veg Fried Rice');
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Paneer Roll','Snacks',65.00,20,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Paneer Roll');
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Lime Juice','Beverages',25.00,40,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Lime Juice');
+INSERT INTO menu_items (name,category,price,stock_qty,available) SELECT 'Veg Sandwich','Snacks',45.00,30,true WHERE NOT EXISTS(SELECT 1 FROM menu_items WHERE name='Veg Sandwich');
